@@ -121,3 +121,47 @@ ol {
 .content__video-card-description-container {
   flex-grow: 1;
 }
+
+.search-form__fieldset-title {
+  font-family: Fira Sans Condensed;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.title {
+  font-family: Oswald;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.content__video-card-title {
+  font-family: Oswald;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  line-clamp: 3;
+}
+
+.content__video-card-description {
+  line-height: 16.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  line-clamp: 3;
+}
