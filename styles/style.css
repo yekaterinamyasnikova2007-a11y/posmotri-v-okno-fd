@@ -250,6 +250,7 @@ input:focus {
 
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .button {
@@ -265,6 +266,7 @@ input:focus {
 
 .button:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .button:active {
@@ -304,6 +306,7 @@ input:focus {
 
 .content__card-link:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .content__card-link:focus {
