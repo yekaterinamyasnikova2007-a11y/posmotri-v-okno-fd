@@ -71,6 +71,7 @@ ol {
 
 .content__list-container {
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 30px;
   overflow: scroll;
@@ -91,6 +92,7 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   min-width: 711px;
   min-height: 386px;
 }
