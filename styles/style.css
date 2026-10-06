@@ -123,14 +123,14 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed';
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
 }
 
 .title {
-  font-family: Oswald;
+  font-family: 'Oswald';
   font-weight: 700;
   font-style: bold;
   font-size: 75px;
@@ -144,11 +144,11 @@ ol {
 
 .content__card-link {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: 'Oswald';
   font-weight: 700;
   font-style: Bold;
   font-size: 30px;
@@ -164,4 +164,88 @@ ol {
   white-space: nowrap;
   overflow: hidden;
   line-clamp: 3;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+}
+
+.search-form__label {
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+}
+
+.search-form__textfield {
+  min-width: 225px;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #ffffff;
+}
+
+input {
+  font-family: 'Fira Sans Condensed';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  border-width: 1px 0px 1px 0px;
+  border-style: solid;
+  border-color: #ffffff;
+  color: #fff;
+  background-color: transparent;
+  appearance: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.search-form__textfield::placeholder {
+  color: rgb(255 255 255 / 0.7);
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #ffffff;
+  padding: 1px;
+}
+
+.search-form__pseudo-checkbox::after {
+  display: block;
+  content: '';
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  opacity: 1;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
 }
