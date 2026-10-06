@@ -152,6 +152,7 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   text-decoration: none;
   color: #ffffff;
 }
@@ -298,10 +299,6 @@ input:focus {
 .more-button {
   width: 100%;
   padding: 6px 0 6px 0;
-}
-
-.content__card-link {
-  display: block;
 }
 
 .content__card-link:active {
