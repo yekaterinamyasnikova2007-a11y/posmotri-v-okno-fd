@@ -75,6 +75,7 @@ ol {
   flex-direction: column;
   gap: 30px;
   overflow: scroll;
+  width: 399px;
 }
 
 .result {
@@ -123,7 +124,11 @@ ol {
 }
 
 .content__video-card-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   flex-grow: 1;
+  width: 0;
 }
 
 .search-form__fieldset-title {
@@ -158,16 +163,17 @@ ol {
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
-  white-space: nowrap;
+white-space: nowrap;
   overflow: hidden;
-  line-clamp: 3;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
   line-height: 16.2px;
-  white-space: nowrap;
-  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
   line-clamp: 3;
+  overflow: hidden;
 }
 
 .visually-hidden {
