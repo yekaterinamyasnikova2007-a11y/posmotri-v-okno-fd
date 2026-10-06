@@ -163,7 +163,7 @@ ol {
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
-white-space: nowrap;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
